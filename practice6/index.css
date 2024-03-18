@@ -1,0 +1,461 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*home section*/
+.home{
+    width: 100svw;
+    height: 100svh;
+    position: relative;
+    background-image: url(pexels-amaury-michaux-14337600.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    top: 0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+   justify-content: space-around;
+   background-color: rgb(243, 243, 243);
+   box-shadow: gray 1px 2px 100px;
+   animation: slider4 1s ease;
+}
+.logo img{
+  height: 2pc;
+  width: 2pc;
+  user-select: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+    user-select: none;
+   
+}
+.menu li{
+   font-size: 10px;
+   user-select: none;
+   transition: step-end ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 35%;
+   transition: 0.1s;
+
+}
+.menu li:hover{
+    height: 10vh;
+    color: blue;
+    border-top: blue 1px solid;
+    font-size: 12px;
+}
+.scerch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+}
+
+.scerch input{
+    padding-left: 10px;
+    height: 5vh;
+    border-radius: 100px;
+    border: .3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: serchbar 2s ease-in-out;
+}
+input::placeholder{
+    transform: translateX(110px);
+    font-style: italic;
+    color: rgb(52, 52, 53);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* home body work */
+.text{
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyhed{
+    font-size: 30px;
+    color: #fff;
+    animation: slider2 1s ease;
+}
+.p1{
+    margin: 0;
+    color: #fff;
+    animation: slider2 1s ease;
+    animation-delay: 100ms;
+}
+.p2{
+    color: #fff;
+    animation: slider2 1s ease;
+    animation-delay: 200ms;
+}
+.hbtn{
+    color: #fff;
+    width: 10vw;
+    border: none;
+   height: 5vh;
+   background-color: rgba(228, 102, 102, 0.692);
+   border-radius: 100px;
+   transition: 0.5s ease;
+   animation: slider2 1s ease;
+   animation-delay: 300ms;
+}
+.hbtn:hover{
+    border-radius: 0;
+    background-color: #fff;
+    color:rgba(228, 102, 102, 0.692);
+    border-radius: 0;
+}
+/* nave section  */
+.nav{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(192, 59, 59, 0.322);
+    backdrop-filter: blur(5px);
+    animation: slider3 1s ease;
+}
+.nhed{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+
+
+}
+.nhed h1{
+    margin-top: 20px;
+    transition: 0.3s ease;
+
+}
+.nhed h1:hover{
+    font-size: 30px;
+}
+.nbox1{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nbh{
+    margin-top: 20px;
+}
+.nbh h1{
+    color: beige;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease;
+}
+.nbh h1:hover{
+    font-size: 30px;
+}
+.nbh h2{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease;
+}
+.nbh h2:hover{
+    font-size: 25px;
+}
+.nbp{
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 25px;
+    transition: 0.3s ease;
+}
+.nbp:hover{
+    font-size: 16px;
+}
+.nbox2{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: left;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.nbox3{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: left;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+/* end of home section */
+
+/* headline secton start from here */
+.headline{
+
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hbox{
+    width: 50vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.hbox div{
+    padding: 20px;
+   box-shadow: -10px 10px 51px -25px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.hbox div h2{
+    padding: 0;
+    margin: 0;
+    transition: 0.6s ease;
+}
+.hbox div h2:hover{
+    font-size: 27px;
+    position: static;
+}
+.hbox div p{
+    font-size: 13px;
+    margin: 0;
+    transition: 0.6s ease;
+}
+.hbox div p:hover{
+    font-size: 15px;
+}
+/* headline secton end from here */
+
+/* about secton start from here */
+.div1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div1 .atext{
+    width: 30%;
+    transition: 1s ease;
+    /* animation: slider1 1s ease; */
+}
+.div2 .atext{
+    width: 30%;
+    /* animation: slider2 1s ease; */
+}
+.show{
+opacity: 1;
+}
+.div img{
+    height: 400px;
+    width: 600px;
+}
+/* about secton end from here */
+/* info start from here */
+.info{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column
+    ;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.uper{
+    width: 100%;
+    height: 45vh;
+    background-color: rgb(190, 74, 74);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uper h1{
+    margin: 0;
+    color: #fff;
+}
+.uper p{
+    padding-bottom: 10px;
+    color: #fff;
+}
+.uper button{
+    height: 6vh;
+    width: 10vw;
+    border: none;
+    border-radius: 100px;
+    transition: .6s ease-in-out;
+}
+.uper button:hover{
+    border-radius: 0;
+    background-color: black;
+    color: #fff;
+}
+.lower{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(0, 0, 0);
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.social{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40vh;
+}
+.iicon{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(20px);
+    height: 12vh;
+}
+.iicon h1{
+    background-color: rgb(21, 36, 36);
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: 1s ease;
+}
+.iicon h1:hover{
+    padding: 12px 22px;
+    font-size: 27px;
+    background-color: #fff;
+    color:rgb(21, 36, 36);
+}
+.emargenci{
+    display: flex;
+    width: 40%;
+    justify-content:space-around;
+    align-items: center;
+}
+.em{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 40vh;
+    margin: 0;
+padding: 0;
+}
+.em h1{
+    font-size: 20px;
+}
+.em ul{
+    padding: 0;
+    list-style: none;
+}
+.em li{
+margin: 0;
+padding: 0;
+font-size: 12px;
+}
+/**animation section**/
+
+/* home animation */
+/* scerch bar animation */
+@keyframes serchbar {
+    from{
+        width: 0;
+    }
+    to{
+        width: 40%;
+    }
+}
+/* end of home animation */
+@keyframes slider1 {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slider2 {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slider3{
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slider4{
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
